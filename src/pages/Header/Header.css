@@ -1,0 +1,40 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+    color: #fff;
+    padding: 20px 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.user-profile {
+    position: relative;
+}
+
+.username {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    color: #222;
+    padding: 4px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    display: none;
+}
+
+.user-profile:hover .username {
+    display: inline-block;
+}
