@@ -38,3 +38,26 @@
 .user-profile:hover .username {
     display: inline-block;
 }
+
+/*mobile and tablet 
+responsive*/
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .username {
+        position: static;
+        transform: none;
+        display: block;
+        margin-top: 10px;
+    }
+}
