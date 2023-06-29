@@ -1,0 +1,9 @@
+.chef-section-container {
+    padding: 80px 50px;
+}
+
+.chef-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}

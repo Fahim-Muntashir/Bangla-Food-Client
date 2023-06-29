@@ -1,0 +1,17 @@
+.chef-card {
+    box-shadow: rgba(0, 0, 0, 0.064) 0px 3px 6px, rgba(28, 143, 49, 0.23) 0px 3px 6px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.chef-card img {
+    width: 400px;
+    height: 500px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.view-recipe {
+    width: 100%;
+    margin-bottom: 0;
+}

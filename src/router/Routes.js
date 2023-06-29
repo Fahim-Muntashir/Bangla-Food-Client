@@ -4,6 +4,8 @@ import Home from "../pages/Home/Home";
 import SignInLayout from "../layout/SignInLayout";
 import Login from "../pages/Login/Login/Login";
 import SignUp from "../pages/Login/SignUp/SignUp";
+import ChefDetail from "../pages/ChefDetail/ChefDetail";
+import Detail from "../layout/Detail";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +29,18 @@ const router = createBrowserRouter([
       {
         path: "/login/signup",
         element: <SignUp></SignUp>,
+      },
+    ],
+  },
+  {
+    path: "detail",
+    element: <Detail></Detail>,
+    children: [
+      {
+        path: ":id",
+        element: <ChefDetail></ChefDetail>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/categories/${params.id}`),
       },
     ],
   },
