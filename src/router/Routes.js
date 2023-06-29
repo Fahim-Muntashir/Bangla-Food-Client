@@ -6,6 +6,7 @@ import Login from "../pages/Login/Login/Login";
 import SignUp from "../pages/Login/SignUp/SignUp";
 import ChefDetail from "../pages/ChefDetail/ChefDetail";
 import Detail from "../layout/Detail";
+import NotFound from "../pages/NotFound/NotFound";
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
           fetch(`http://localhost:5000/categories/${params.id}`),
       },
     ],
+  },
+  {
+    path: "*",
+    element: <NotFound></NotFound>,
   },
 ]);
 export default router;

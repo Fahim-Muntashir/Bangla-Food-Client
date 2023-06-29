@@ -1,0 +1,10 @@
+.not {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.not-found {
+    width: 800px;
+    height: 700px;
+    margin: 60px auto;
+}
