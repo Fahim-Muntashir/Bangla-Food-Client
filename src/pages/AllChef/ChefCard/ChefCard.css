@@ -5,8 +5,8 @@
 }
 
 .chef-card img {
-    width: 400px;
-    height: 500px;
+    width: 100%;
+    height: auto;
     border-radius: 8px;
     object-fit: cover;
 }
@@ -14,4 +14,15 @@
 .view-recipe {
     width: 100%;
     margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .chef-card {
+        padding: 10px;
+    }
+
+    .chef-card img {
+        width: 100%;
+        height: auto;
+    }
 }

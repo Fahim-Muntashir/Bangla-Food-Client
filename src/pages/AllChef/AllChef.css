@@ -7,3 +7,15 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px;
 }
+
+@media (max-width: 768px) {
+    .chef-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .chef-section {
+        grid-template-columns: 1fr;
+    }
+}
