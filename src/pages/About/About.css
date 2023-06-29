@@ -1,0 +1,22 @@
+.about-container {
+    padding: 30px 50px;
+    display: flex;
+
+}
+
+.about-container img {
+    width: 37%;
+    height: 560px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about-text {
+    width: 50%;
+    margin-left: auto;
+    margin-top: 60px;
+}
+
+.about-desc {
+    margin: 50px 50px;
+}
