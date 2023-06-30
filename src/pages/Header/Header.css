@@ -39,6 +39,11 @@
     display: inline-block;
 }
 
+.profile {
+    height: 30px;
+    width: 30px;
+}
+
 /*mobile and tablet 
 responsive*/
 

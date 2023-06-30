@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Header.css";
+import { AuthContext } from "../../Provider/AuthProvider";
+import profile from "../../assests/profile.png";
+import { Link } from "react-router-dom";
 
-const Navbar = ({ loggedIn, userName }) => {
+const Navbar = () => {
+  const { user } = useContext(AuthContext);
+  console.log(user);
   return (
     <nav className="navbar">
       <h2 className="">
@@ -9,16 +14,15 @@ const Navbar = ({ loggedIn, userName }) => {
       </h2>
       <ul className="nav-links">
         <li>
-          <a href="/">Home</a>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <a href="/blog">Blog</a>
+          <Link to="/">Blog</Link>
         </li>
         <li>
-          {loggedIn ? (
+          {user ? (
             <div className="user-profile">
-              <img src="/profile-picture.jpg" alt="Profile" />
-              <span className="username">{userName}</span>
+              <img className="profile" src={profile} alt="" />
             </div>
           ) : (
             <a href="/login">Login</a>
