@@ -6,7 +6,7 @@ const AllChef = () => {
   const [chefs, setChefs] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/categories")
+    fetch("https://chef-hunter-server-fahimmuntashir1.vercel.app/categories")
       .then((res) => res.json())
       .then((data) => setChefs(data));
   }, []);

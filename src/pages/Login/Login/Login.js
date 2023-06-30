@@ -30,7 +30,6 @@ const Login = () => {
         console.log(error);
       });
   };
-
   return (
     <div className="login-container">
       <section className="login-section">
@@ -56,6 +55,12 @@ const Login = () => {
                 <div className="inputBox">
                   <input type="submit" value="Login" />
                 </div>
+                <button className="common-btn-style">
+                  Sign In With Google
+                </button>
+                <button className="common-btn-style">
+                  Sign In With Github
+                </button>
               </div>
             </form>
           </div>

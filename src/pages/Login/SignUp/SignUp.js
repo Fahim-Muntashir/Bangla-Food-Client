@@ -58,6 +58,12 @@ const SignUp = () => {
                 <div className="inputBox">
                   <input type="submit" value="Register" />
                 </div>
+                <button className="common-btn-style">
+                  Sign Up With Google
+                </button>
+                <button className="common-btn-style">
+                  Sign Up With Github
+                </button>
               </div>
             </form>
           </div>

@@ -1,6 +1,7 @@
 import { initializeApp } from "firebase/app";
-require("dotenv").config();
-// Loads environment variables from .env file
+import dotenv from "dotenv";
+
+dotenv.config(); // Loads environment variables from .env file
 
 const firebaseConfig = {
   apiKey: process.env.API_KEY,
