@@ -1,0 +1,33 @@
+/* Default styles for the recommended section */
+.recomended {
+    display: flex;
+    margin: 30px 60px;
+    padding: 40px 0;
+}
+
+.recomended-desc {
+    width: 400px;
+}
+
+.recomended img {
+    width: 50%;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    /* Adjust styles for smaller devices */
+    .recomended {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        margin: 20px; /* Reduce margin for smaller screens */
+        padding: 20px 0; /* Reduce padding for smaller screens */
+    }
+
+    .recomended-desc {
+        width: 100%; /* Take up full width on smaller screens */
+    }
+
+    .recomended img {
+        width: 100%; /* Take up full width on smaller screens */
+    }
+}

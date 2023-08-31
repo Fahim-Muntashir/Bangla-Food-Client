@@ -3,6 +3,7 @@ import Cover from "./Cover/Cover";
 import About from "../About/About";
 import TopITem from "../TopItem/TopITem";
 import AllChef from "../AllChef/AllChef";
+import Recomended from "../Recomended/Recomended";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <AllChef></AllChef>
       <About></About>
       <TopITem></TopITem>
+      <Recomended></Recomended>
     </div>
   );
 };

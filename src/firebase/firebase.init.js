@@ -1,16 +1,18 @@
+// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import dotenv from "dotenv";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-dotenv.config(); // Loads environment variables from .env file
-
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: process.env.API_KEY,
-  authDomain: process.env.AUTH_DOMAIN,
-  projectId: process.env.PROJECT_ID,
-  storageBucket: process.env.STORAGE_BUCKET,
-  messagingSenderId: process.env.MESSAGING_SENDER_ID,
-  appId: process.env.APP_ID,
+  apiKey: "AIzaSyDsFYfpuk0eQIT8EH2uUVywgRdVY84DOOQ",
+  authDomain: "bengali-food-2dd05.firebaseapp.com",
+  projectId: "bengali-food-2dd05",
+  storageBucket: "bengali-food-2dd05.appspot.com",
+  messagingSenderId: "533348502370",
+  appId: "1:533348502370:web:c4002191d3ced9a2543a3b",
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 export default app;
