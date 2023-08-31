@@ -1,0 +1,16 @@
+.delivary{
+    background-image: url('../../assests/backbarger.jpg');
+    background-position: center;
+    padding: 40px;
+    display: flex;
+}
+
+.delivary div{
+    background-color: #171515;
+    opacity: 0.7;
+    color: white;
+    margin: 3px;
+    border-radius: 4px;
+    text-align: center;
+    padding:20px
+}

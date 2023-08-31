@@ -1,0 +1,18 @@
+.subscribe{
+    color:white;
+    background-color: black;
+    text-align: center;
+    border-bottom: 1px solid rgb(94, 77, 77);
+    padding:100px 10px;
+}
+.subscribe div {
+    margin: 30px ;
+}
+.subscribe input{
+    padding: 10px 20px ;
+    width: 300px;
+}
+.subscribe button{
+    padding:10px 20px;
+
+}
